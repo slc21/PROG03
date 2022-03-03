@@ -1,2 +1,4 @@
 # PROG03
 CS160 Spring 2022 PROG03
+
+README for project 3 
