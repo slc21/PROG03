@@ -3,16 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1615" />
+        <entry key="..\:/Users/cam66/Documents/GitHub/PROG03/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/cam66/Documents/GitHub/PROG03/app/src/main/res/layout/fragment_running_activity.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/drawable/box.xml" value="0.299" />
-        <entry key="app/src/main/res/drawable/circle.xml" value="0.1615" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.299" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_body_details.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/fragment_exercise_menu.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/fragment_home_page.xml" value="0.32993672688802084" />
+        <entry key="app/src/main/res/layout/fragment_home_page.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_running_activity.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/list_items.xml" value="0.46247100830078114" />
+        <entry key="app/src/main/res/layout/list_items.xml" value="1.0694717407226562" />
       </map>
     </option>
   </component>

@@ -19,18 +19,23 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 // Implement OnMapReadyCallback.
-public class RunningActivity extends AppCompatActivity implements OnMapReadyCallback {
+public class RunningActivity extends Fragment implements OnMapReadyCallback {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Set the layout file as the content view.
-        setContentView(R.layout.activity_main);
+        View view = inflater.inflate(R.layout.activity_main,container,false);
 
         // Get a handle to the fragment and register the callback.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager()
                 .findFragmentById(R.id.map);
+
+        //setContentView(R.layout.activity_main);
+
         mapFragment.getMapAsync(this);
+
+        return view;
+
 
     }
 
