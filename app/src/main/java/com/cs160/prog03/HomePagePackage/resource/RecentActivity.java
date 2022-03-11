@@ -8,4 +8,12 @@ public class RecentActivity {
         this.activity = activity;
         this.time = time;
     }
+
+    public String getActivity() {
+        return activity;
+    }
+
+    public String getTime() {
+        return time;
+    }
 }
