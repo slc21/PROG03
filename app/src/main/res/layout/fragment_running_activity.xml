@@ -12,6 +12,7 @@
         android:id="@+id/record"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#C35024"
         android:text="Record"
         tools:layout_editor_absoluteX="302dp"
         tools:layout_editor_absoluteY="43dp" />
@@ -72,7 +73,7 @@
         android:id="@+id/button2"
         android:layout_width="414dp"
         android:layout_height="64dp"
-        android:background="#C35024"
+        android:backgroundTint="#C35024"
         android:text="End Run"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="678dp" />
