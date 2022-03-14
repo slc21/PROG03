@@ -39,25 +39,24 @@ public class HomePage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-//        View view = inflater.inflate(R.layout.fragment_home_page, container, false);
+        
         binding = FragmentHomePageBinding.inflate(inflater, container, false);
 
-//        recyclerView = binding.getRoot().findViewById(R.id.recentActivities);
-//
-//        activities = new ArrayList<RecentActivity>();
-//        activities.add(new RecentActivity("Running", "Yesterday"));
-//        activities.add(new RecentActivity("Running", "Yesterday"));
-//        activities.add(new RecentActivity("Running", "Yesterday"));
-//
-//
-//        RecyclerViewHomePage homePage = new RecyclerViewHomePage(activities);
-//
-//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext().getApplicationContext());
-//
-//        recyclerView.setLayoutManager(layoutManager);
-//        recyclerView.setItemAnimator(new DefaultItemAnimator());
-//        recyclerView.setAdapter(homePage);
+        recyclerView = binding.getRoot().findViewById(R.id.recentActivities);
+
+        activities = new ArrayList<RecentActivity>();
+        activities.add(new RecentActivity("Running", "Yesterday"));
+        activities.add(new RecentActivity("Running", "Yesterday"));
+        activities.add(new RecentActivity("Running", "Yesterday"));
+
+
+        RecyclerViewHomePage homePage = new RecyclerViewHomePage(activities);
+
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext().getApplicationContext());
+
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(homePage);
         return binding.getRoot();
     }
 
