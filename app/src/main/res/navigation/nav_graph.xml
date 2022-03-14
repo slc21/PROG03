@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.cs160.prog03.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_exerciseMenu"
+            app:destination="@id/exerciseMenu" />
+        <action
+            android:id="@+id/action_homePage_to_bodyDetails2"
+            app:destination="@id/bodyDetails2" />
+    </fragment>
+    <activity
+        android:id="@+id/runningActivity"
+        android:name="com.cs160.prog03.RunningActivity"
+        android:label="fragment_running_activity"
+        tools:layout="@layout/fragment_running_activity" />
+    <fragment
+        android:id="@+id/exerciseMenu"
+        android:name="com.cs160.prog03.ExerciseMenu"
+        android:label="fragment_exercise_menu"
+        tools:layout="@layout/fragment_exercise_menu" >
+        <action
+            android:id="@+id/action_exerciseMenu_to_runningActivity"
+            app:destination="@id/runningActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/bodyDetails2"
+        android:name="com.cs160.prog03.BodyDetails"
+        android:label="fragment_body_details"
+        tools:layout="@layout/fragment_body_details" />
+</navigation>
