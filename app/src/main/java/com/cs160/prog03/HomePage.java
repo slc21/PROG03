@@ -70,6 +70,14 @@ public class HomePage extends Fragment {
                         .navigate(R.id.action_homePage_to_exerciseMenu);
             }
         });
+
+        binding.bodyDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(HomePage.this)
+                        .navigate(R.id.action_homePage_to_bodyDetails2);
+            }
+        });
     }
 
     @Override
