@@ -46,8 +46,8 @@ public class HomePage extends Fragment {
 
         activities = new ArrayList<RecentActivity>();
         activities.add(new RecentActivity("Running", "Yesterday"));
-        activities.add(new RecentActivity("Running", "Yesterday"));
-        activities.add(new RecentActivity("Running", "Yesterday"));
+        activities.add(new RecentActivity("Boxing", "Two days ago"));
+        activities.add(new RecentActivity("Rock Climbing", "Four days ago"));
 
 
         RecyclerViewHomePage homePage = new RecyclerViewHomePage(activities);
