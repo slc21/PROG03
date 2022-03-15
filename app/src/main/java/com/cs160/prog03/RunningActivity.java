@@ -1,5 +1,6 @@
 package com.cs160.prog03;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.google.android.gms.maps.model.PolylineOptions;
 // Implement OnMapReadyCallback.
 public class RunningActivity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener {
     private Button btn;
+    private Button endRun;
 
     boolean recording = true;
 
@@ -44,6 +46,9 @@ public class RunningActivity extends AppCompatActivity implements OnMapReadyCall
 
         btn = (Button) findViewById(R.id.record);
         btn.setOnClickListener(this);
+
+        endRun = (Button) findViewById(R.id.endrun);
+        endRun.setOnClickListener(this);
     }
 
     @Override
@@ -113,12 +118,18 @@ public class RunningActivity extends AppCompatActivity implements OnMapReadyCall
 
     @Override
     public void onClick(View view) {
-        if (recording) {
-            btn.setText("Recording");
-            recording = false;
-        } else {
-            btn.setText("Record");
-            recording = true;
+        if (view.getId()==R.id.record){
+            if (recording) {
+                btn.setText("Recording");
+                recording = false;
+            } else {
+                btn.setText("Record");
+                recording = true;
+            }
+        }
+        if (view.getId()==R.id.endrun){
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
     }
 }
